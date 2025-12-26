@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7a5ab602a5c29efdb421dbef9e5b69a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7a5ab602a5c29efdb421dbef9e5b69a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7a5ab602a5c29efdb421dbef9e5b69a = L.map(
+                "map_c7a5ab602a5c29efdb421dbef9e5b69a",
+                {
+                    center: [50.8503, 4.3517],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_161b15e2edd10e1c96df03a00ff79204 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_161b15e2edd10e1c96df03a00ff79204.addTo(map_c7a5ab602a5c29efdb421dbef9e5b69a);
+        
+    
+            var feature_group_8770e385123b4cd1778ddf7928c6694a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_e90df5370032ee730100be5df1932e4e = L.polyline(
+                [[52.309523, 4.762181], [50.898344, 4.48237]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_e90df5370032ee730100be5df1932e4e.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Amsterdam Airport Schiphol to Brussels Airport: Rail 66.0 min, Air 73.58 min, Distance 185.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f72ac4ee6689cb98d5a603ed2c06b045 = L.polyline(
+                [[52.309523, 4.762181], [50.835374, 4.335695]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_f72ac4ee6689cb98d5a603ed2c06b045.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Amsterdam Airport Schiphol to Brussels: Rail 73.0 min, Air 73.58 min, Distance 195.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_280e3efd81cc02e2b411c859153c510a = L.polyline(
+                [[50.898344, 4.48237], [52.309523, 4.762181]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_280e3efd81cc02e2b411c859153c510a.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport to Amsterdam Airport Schiphol: Rail 66.0 min, Air 90.67 min, Distance 185.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8322c06c9c87e32d010fee3dedf05e67 = L.polyline(
+                [[50.898344, 4.48237], [52.37919, 4.899426]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_8322c06c9c87e32d010fee3dedf05e67.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport to Amsterdam: Rail 77.0 min, Air 90.67 min, Distance 202.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c732c8bbfd3b1a4c56235687331d5013 = L.polyline(
+                [[50.898344, 4.48237], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_c732c8bbfd3b1a4c56235687331d5013.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport to Charles de Gaulle International Airport: Rail 78.0 min, Air 101.69 min, Distance 306.5 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7bd71fdd3f184c6c7aa2c17da8eb9fb2 = L.polyline(
+                [[50.898344, 4.48237], [51.531921, -0.126361]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_7bd71fdd3f184c6c7aa2c17da8eb9fb2.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport to London: Rail 111.0 min, Air 119.66 min, Distance 387.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4db043f6daef0369549fe00ad494c818 = L.polyline(
+                [[50.898344, 4.48237], [48.8804, 2.354973]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_4db043f6daef0369549fe00ad494c818.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport to Paris: Rail 87.0 min, Air 101.69 min, Distance 328.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_65e92a2d0749fc8f011da87e5d7d17f8 = L.polyline(
+                [[50.835374, 4.335695], [52.309523, 4.762181]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_65e92a2d0749fc8f011da87e5d7d17f8.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels to Amsterdam Airport Schiphol: Rail 74.0 min, Air 90.67 min, Distance 196.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1b39a7e79237a2c140cf9554383bba67 = L.polyline(
+                [[50.835374, 4.335695], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_1b39a7e79237a2c140cf9554383bba67.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels to Charles de Gaulle International Airport: Rail 64.0 min, Air 101.69 min, Distance 291.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ef990c8355038ac5808e1a9981888f11 = L.polyline(
+                [[49.003989, 2.571154], [50.898344, 4.48237]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_ef990c8355038ac5808e1a9981888f11.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Brussels Airport: Rail 75.0 min, Air 96.38 min, Distance 307.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bc054965b67527d99309c538938f15cc = L.polyline(
+                [[49.003989, 2.571154], [50.835374, 4.335695]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_bc054965b67527d99309c538938f15cc.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Brussels: Rail 64.0 min, Air 96.38 min, Distance 291.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_36e7c86b2aeda18cbf0cfcfc36468598 = L.polyline(
+                [[49.003989, 2.571154], [45.721004, 5.076038]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_36e7c86b2aeda18cbf0cfcfc36468598.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Lyon Saint-Exupéry Airport: Rail 95.0 min, Air 107.49 min, Distance 453.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_65103e5cee44c3479db63787e1f68ed2 = L.polyline(
+                [[49.003989, 2.571154], [51.531921, -0.126361]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_65103e5cee44c3479db63787e1f68ed2.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to London: Rail 111.0 min, Air 131.93 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7e77be01fbc0bb259d052ce59a7fd5c1 = L.polyline(
+                [[49.003989, 2.571154], [51.531921, -0.126361]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_7e77be01fbc0bb259d052ce59a7fd5c1.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to London: Rail 111.0 min, Air 131.93 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_266eb186ee0ee38c7aabd36cd0981eae = L.polyline(
+                [[49.003989, 2.571154], [51.531921, -0.126361]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_266eb186ee0ee38c7aabd36cd0981eae.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to London: Rail 111.0 min, Air 131.93 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f89b61e9ad63cc6ff08a1c860db0e385 = L.polyline(
+                [[49.003989, 2.571154], [51.531921, -0.126361]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_f89b61e9ad63cc6ff08a1c860db0e385.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to London: Rail 111.0 min, Air 131.93 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4b87a9c6a43f33e1a49fa7205f718e0a = L.polyline(
+                [[49.003989, 2.571154], [49.599717, 6.134391]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_4b87a9c6a43f33e1a49fa7205f718e0a.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Luxembourg: Rail 96.0 min, Air 97.2 min, Distance 354.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5ee12bd794f848cd0d2ce97bb1b1c171 = L.polyline(
+                [[49.003989, 2.571154], [45.760559, 4.859355]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_5ee12bd794f848cd0d2ce97bb1b1c171.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Lyon: Rail 98.0 min, Air 107.49 min, Distance 441.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_58f3ff1173b57518572104660f168c6f = L.polyline(
+                [[49.003989, 2.571154], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_58f3ff1173b57518572104660f168c6f.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport to Rennes: Rail 100.0 min, Air 104.63 min, Distance 435.2 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ad6979446b5564c8b48d6f0d5ca49cab = L.polyline(
+                [[51.27817, 6.766838], [50.052932, 8.569915]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_ad6979446b5564c8b48d6f0d5ca49cab.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Düsseldorf Airport to Frankfurt Airport: Rail 60.0 min, Air 81.01 min, Distance 214.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3f19dc9d0aaa3944abecdaf8a76f2ab8 = L.polyline(
+                [[51.27817, 6.766838], [50.106654, 8.662581]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_3f19dc9d0aaa3944abecdaf8a76f2ab8.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Düsseldorf Airport to Frankfurt am Main: Rail 68.0 min, Air 81.01 min, Distance 227.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9ce74638fcd0227c2c32f4653bfc3f74 = L.polyline(
+                [[51.21996, 6.794316], [50.052932, 8.569915]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_9ce74638fcd0227c2c32f4653bfc3f74.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Düsseldorf to Frankfurt Airport: Rail 55.0 min, Air 81.01 min, Distance 206.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_62239f4a963b31b73b0e6b8e74a578bf = L.polyline(
+                [[41.793437, 12.252024], [43.77681, 11.247806]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_62239f4a963b31b73b0e6b8e74a578bf.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Rome–Fiumicino International Airport to Firenze: Rail 89.0 min, Air 89.1 min, Distance 288.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7f1441543fa518cc083689caba22619b = L.polyline(
+                [[50.052932, 8.569915], [51.27817, 6.766838]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_7f1441543fa518cc083689caba22619b.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt Airport to Düsseldorf Airport: Rail 61.0 min, Air 80.19 min, Distance 211.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_eebf76c7ea8877a850e5f0422d6eddde = L.polyline(
+                [[50.052932, 8.569915], [51.21996, 6.794316]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_eebf76c7ea8877a850e5f0422d6eddde.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt Airport to Düsseldorf: Rail 55.0 min, Air 80.19 min, Distance 202.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_057cf66a8c12289c7026cca8ae71893a = L.polyline(
+                [[50.052932, 8.569915], [48.585107, 7.734301]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_057cf66a8c12289c7026cca8ae71893a.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt Airport to Strasbourg: Rail 89.0 min, Air 89.1 min, Distance 214.6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bf830a5188d5ce7eaf36390155769b12 = L.polyline(
+                [[50.106654, 8.662581], [51.27817, 6.766838]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_bf830a5188d5ce7eaf36390155769b12.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt am Main to Düsseldorf Airport: Rail 69.0 min, Air 80.19 min, Distance 223.5 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_240ca56fc0d1b008310ec8c47f2e90b8 = L.polyline(
+                [[45.721004, 5.076038], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_240ca56fc0d1b008310ec8c47f2e90b8.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon Saint-Exupéry Airport to Charles de Gaulle International Airport: Rail 98.0 min, Air 115.1 min, Distance 453.8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_26ce64fbc4db892fa282f9f68c01040b = L.polyline(
+                [[45.721004, 5.076038], [43.302666, 5.380407]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_26ce64fbc4db892fa282f9f68c01040b.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon Saint-Exupéry Airport to Marseille: Rail 66.0 min, Air 90.85 min, Distance 308.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_86512c4cdfaa9f8b2282e704efaf113b = L.polyline(
+                [[45.721004, 5.076038], [48.8804, 2.354973]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_86512c4cdfaa9f8b2282e704efaf113b.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon Saint-Exupéry Airport to Paris: Rail 110.0 min, Air 115.1 min, Distance 487.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7d99541ff7be931b9a372a4ddcd415d1 = L.polyline(
+                [[51.531921, -0.126361], [50.898344, 4.48237]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_7d99541ff7be931b9a372a4ddcd415d1.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London to Brussels Airport: Rail 108.0 min, Air 111.01 min, Distance 388.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2d103dbf79f231976b827c8e896adf14 = L.polyline(
+                [[51.531921, -0.126361], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_2d103dbf79f231976b827c8e896adf14.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London to Charles de Gaulle International Airport: Rail 112.0 min, Air 127.8 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f7597ed65261f619ffb795feb1febb83 = L.polyline(
+                [[51.531921, -0.126361], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_f7597ed65261f619ffb795feb1febb83.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London to Charles de Gaulle International Airport: Rail 112.0 min, Air 127.8 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ab753cf6b488e1e5a5da88812157b165 = L.polyline(
+                [[51.531921, -0.126361], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_ab753cf6b488e1e5a5da88812157b165.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London to Charles de Gaulle International Airport: Rail 112.0 min, Air 127.8 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ac55f61d246610897e6e526949105ccd = L.polyline(
+                [[51.531921, -0.126361], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_ac55f61d246610897e6e526949105ccd.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London to Charles de Gaulle International Airport: Rail 112.0 min, Air 127.8 min, Distance 468.7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_65c9575e582e4d9e7326c11376664452 = L.polyline(
+                [[45.760559, 4.859355], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_65c9575e582e4d9e7326c11376664452.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon to Charles de Gaulle International Airport: Rail 99.0 min, Air 115.1 min, Distance 442.0 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d8430669ff263f595470780a8466965f = L.polyline(
+                [[45.627093, 8.711347], [45.428659, 10.982741]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_d8430669ff263f595470780a8466965f.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Milan Malpensa International Airport to Verona: Rail 89.0 min, Air 89.1 min, Distance 197.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9a2db89cbb490da0d036548a29bc684e = L.polyline(
+                [[43.302666, 5.380407], [45.721004, 5.076038]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_9a2db89cbb490da0d036548a29bc684e.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Marseille to Lyon Saint-Exupéry Airport: Rail 66.0 min, Air 89.34 min, Distance 308.9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c0bbfd80e877a5f08587b503363aa31d = L.polyline(
+                [[48.8804, 2.354973], [50.898344, 4.48237]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_c0bbfd80e877a5f08587b503363aa31d.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Paris to Brussels Airport: Rail 84.0 min, Air 96.38 min, Distance 329.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b55fc6ca68e39c89faef59164778c827 = L.polyline(
+                [[48.103517, -1.672744], [49.003989, 2.571154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_b55fc6ca68e39c89faef59164778c827.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Rennes to Charles de Gaulle International Airport: Rail 104.0 min, Air 112.91 min, Distance 435.2 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0169729a6b7d00fc3524b69ac0ae9440 = L.polyline(
+                [[48.784081, 9.181636], [50.052932, 8.569915]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8770e385123b4cd1778ddf7928c6694a);
+        
+    
+            poly_line_0169729a6b7d00fc3524b69ac0ae9440.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Stuttgart to Frankfurt Airport: Rail 71.0 min, Air 81.0 min, Distance 182.1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_8770e385123b4cd1778ddf7928c6694a.addTo(map_c7a5ab602a5c29efdb421dbef9e5b69a);
+        
+    
+            var feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a63a71177fe588d997b3b64c744d3963 = L.marker(
+                [52.309523, 4.762181],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_5ece0ef431458a1eceb253a654ed2b18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a63a71177fe588d997b3b64c744d3963.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Amsterdam Airport Schiphol (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a63a71177fe588d997b3b64c744d3963.setIcon(icon_5ece0ef431458a1eceb253a654ed2b18);
+            
+    
+            var marker_0a6161a6f8f96096a8e2cd5a19a3a176 = L.marker(
+                [50.898344, 4.48237],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_ce5417eaba468e95c45f7ef7df8680d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0a6161a6f8f96096a8e2cd5a19a3a176.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels Airport (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a6161a6f8f96096a8e2cd5a19a3a176.setIcon(icon_ce5417eaba468e95c45f7ef7df8680d9);
+            
+    
+            var marker_1b7cb8f44e4c4326b17018f47c45aaae = L.marker(
+                [50.835374, 4.335695],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_9e0a6fed3bec7e1e1c322fc567b2f9b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1b7cb8f44e4c4326b17018f47c45aaae.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Brussels (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b7cb8f44e4c4326b17018f47c45aaae.setIcon(icon_9e0a6fed3bec7e1e1c322fc567b2f9b0);
+            
+    
+            var marker_63bb42f5f17625e288e52b57da011aee = L.marker(
+                [52.37919, 4.899426],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_6bab9047eef69910d6a912728cbc46e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_63bb42f5f17625e288e52b57da011aee.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Amsterdam (Destination)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63bb42f5f17625e288e52b57da011aee.setIcon(icon_6bab9047eef69910d6a912728cbc46e0);
+            
+    
+            var marker_5b606837039980098d76f93290393ca0 = L.marker(
+                [49.003989, 2.571154],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_8c32263e49dde8d19830e117578edd49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5b606837039980098d76f93290393ca0.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Charles de Gaulle International Airport (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b606837039980098d76f93290393ca0.setIcon(icon_8c32263e49dde8d19830e117578edd49);
+            
+    
+            var marker_3ddf15c69c11327a3c2d593f6561421f = L.marker(
+                [51.531921, -0.126361],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_28a8f3edcfc4b52c9da8f42838ed0c77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3ddf15c69c11327a3c2d593f6561421f.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     London (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ddf15c69c11327a3c2d593f6561421f.setIcon(icon_28a8f3edcfc4b52c9da8f42838ed0c77);
+            
+    
+            var marker_9a46b3e041a51fa9b5e781e4c4aae80c = L.marker(
+                [48.8804, 2.354973],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_d39c673819bf77d515d6463653ed6b6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9a46b3e041a51fa9b5e781e4c4aae80c.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Paris (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a46b3e041a51fa9b5e781e4c4aae80c.setIcon(icon_d39c673819bf77d515d6463653ed6b6c);
+            
+    
+            var marker_43bf7db4eed661c8212b363e6b6f79cd = L.marker(
+                [45.721004, 5.076038],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_4950d36bebc831a990cabd673f426d3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_43bf7db4eed661c8212b363e6b6f79cd.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon Saint-Exupéry Airport (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43bf7db4eed661c8212b363e6b6f79cd.setIcon(icon_4950d36bebc831a990cabd673f426d3e);
+            
+    
+            var marker_a17036788038d22a6316e7e5841f77a0 = L.marker(
+                [49.599717, 6.134391],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_2cf93cfef4fa9f36bf4fa8ed0a554503 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a17036788038d22a6316e7e5841f77a0.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Luxembourg (Destination)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a17036788038d22a6316e7e5841f77a0.setIcon(icon_2cf93cfef4fa9f36bf4fa8ed0a554503);
+            
+    
+            var marker_15a703a190ab211b1d929f8b191485f7 = L.marker(
+                [45.760559, 4.859355],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_4bef5bfd68681b942d75327860ec7137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_15a703a190ab211b1d929f8b191485f7.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Lyon (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15a703a190ab211b1d929f8b191485f7.setIcon(icon_4bef5bfd68681b942d75327860ec7137);
+            
+    
+            var marker_c3804289e2472f3c92fe9552ed25a540 = L.marker(
+                [48.103517, -1.672744],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_cd4fa1163ce0b6cea0f81e6673c65fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c3804289e2472f3c92fe9552ed25a540.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Rennes (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c3804289e2472f3c92fe9552ed25a540.setIcon(icon_cd4fa1163ce0b6cea0f81e6673c65fb2);
+            
+    
+            var marker_383e403932523ca75c2f077d8d902e2a = L.marker(
+                [51.27817, 6.766838],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_d31301eec43114d4ff65c58579651dd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_383e403932523ca75c2f077d8d902e2a.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Düsseldorf Airport (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_383e403932523ca75c2f077d8d902e2a.setIcon(icon_d31301eec43114d4ff65c58579651dd0);
+            
+    
+            var marker_f26f054b9764f963b6bb745f6c9b587b = L.marker(
+                [50.052932, 8.569915],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_0c94dd6f79ad02aeb22006794b9c507b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f26f054b9764f963b6bb745f6c9b587b.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt Airport (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f26f054b9764f963b6bb745f6c9b587b.setIcon(icon_0c94dd6f79ad02aeb22006794b9c507b);
+            
+    
+            var marker_cd6aad89567a5ef4de737cc2c3494e6d = L.marker(
+                [50.106654, 8.662581],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_53f685e652c51c6aa6a3372af3095c0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cd6aad89567a5ef4de737cc2c3494e6d.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Frankfurt am Main (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd6aad89567a5ef4de737cc2c3494e6d.setIcon(icon_53f685e652c51c6aa6a3372af3095c0e);
+            
+    
+            var marker_62f2c5127ad2b2f59151c256f2979554 = L.marker(
+                [51.21996, 6.794316],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_2b964bc7b4f01517109da90726f64c4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_62f2c5127ad2b2f59151c256f2979554.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Düsseldorf (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62f2c5127ad2b2f59151c256f2979554.setIcon(icon_2b964bc7b4f01517109da90726f64c4f);
+            
+    
+            var marker_ece30b6bc403dd96ec901a5ecbed54a2 = L.marker(
+                [41.793437, 12.252024],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_c3aa96fbfc27aa5c82d9344b1a891d43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ece30b6bc403dd96ec901a5ecbed54a2.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Rome–Fiumicino International Airport (Origin)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ece30b6bc403dd96ec901a5ecbed54a2.setIcon(icon_c3aa96fbfc27aa5c82d9344b1a891d43);
+            
+    
+            var marker_49cb5ce169e1a7e8089644603c6f864b = L.marker(
+                [43.77681, 11.247806],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_9960844727c2a5003298f1f6605bcf11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_49cb5ce169e1a7e8089644603c6f864b.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Firenze (Destination)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49cb5ce169e1a7e8089644603c6f864b.setIcon(icon_9960844727c2a5003298f1f6605bcf11);
+            
+    
+            var marker_cf1282aec8abcac6113efc32daf2a1ec = L.marker(
+                [48.585107, 7.734301],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_f0ca416eba2ac2c76baf61b393842674 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cf1282aec8abcac6113efc32daf2a1ec.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Strasbourg (Destination)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf1282aec8abcac6113efc32daf2a1ec.setIcon(icon_f0ca416eba2ac2c76baf61b393842674);
+            
+    
+            var marker_4f20bf45473dfca0ea491968e6b6b12e = L.marker(
+                [43.302666, 5.380407],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_813b3ab4615a4cc0e1b1141a598286b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "exchange",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4f20bf45473dfca0ea491968e6b6b12e.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Marseille (Hub)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f20bf45473dfca0ea491968e6b6b12e.setIcon(icon_813b3ab4615a4cc0e1b1141a598286b6);
+            
+    
+            var marker_9b92f8eee5f72b8963076bde52c0f1fe = L.marker(
+                [45.627093, 8.711347],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_d43e2099b8140605420e0f27b6c3f783 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9b92f8eee5f72b8963076bde52c0f1fe.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Milan Malpensa International Airport (Origin)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b92f8eee5f72b8963076bde52c0f1fe.setIcon(icon_d43e2099b8140605420e0f27b6c3f783);
+            
+    
+            var marker_d946df7152c90d2dd059bf054f7763c2 = L.marker(
+                [45.428659, 10.982741],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_8e03c11784bdf0342ac1039d2f983374 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d946df7152c90d2dd059bf054f7763c2.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Verona (Destination)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d946df7152c90d2dd059bf054f7763c2.setIcon(icon_8e03c11784bdf0342ac1039d2f983374);
+            
+    
+            var marker_b5deebf928865963431934708fbb3189 = L.marker(
+                [48.784081, 9.181636],
+                {
+}
+            ).addTo(feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96);
+        
+    
+            var icon_dc7c04a987b7949e45827678c899667f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "train",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b5deebf928865963431934708fbb3189.bindTooltip(
+                `<div style="font-size: 14px; font-weight: bold; white-space: nowrap;">
+                     Stuttgart (Origin)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5deebf928865963431934708fbb3189.setIcon(icon_dc7c04a987b7949e45827678c899667f);
+            
+    
+            feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96.addTo(map_c7a5ab602a5c29efdb421dbef9e5b69a);
+        
+    
+            var layer_control_6466cd0c7e5fd094dc70ed7632dea378_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_161b15e2edd10e1c96df03a00ff79204,
+                },
+                overlays :  {
+                    "Connections" : feature_group_8770e385123b4cd1778ddf7928c6694a,
+                    "Stations" : feature_group_c7cb0ef48bac062d6e56d44fbb3c2c96,
+                },
+            };
+            let layer_control_6466cd0c7e5fd094dc70ed7632dea378 = L.control.layers(
+                layer_control_6466cd0c7e5fd094dc70ed7632dea378_layers.base_layers,
+                layer_control_6466cd0c7e5fd094dc70ed7632dea378_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c7a5ab602a5c29efdb421dbef9e5b69a);
+
+        
+</script>
+</html>
