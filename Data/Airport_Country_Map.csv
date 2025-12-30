@@ -1,0 +1,83 @@
+Airport_Name,Country,Type
+Amsterdam Airport Schiphol,Netherlands,Exact Match
+Brussels Airport,Belgium,Exact Match
+Charles de Gaulle International Airport,France,Exact Match
+London,United Kingdom,Exact Match
+London Heathrow Airport,United Kingdom,Exact Match
+Frankfurt Airport,Germany,Exact Match
+Düsseldorf Airport,Germany,Exact Match
+Lyon-Saint Exupéry Airport,France,Exact Match
+Marseille Provence Airport,France,Exact Match
+Stuttgart Airport,Germany,Exact Match
+Zurich Airport,Switzerland,Exact Match
+Geneva Airport,Switzerland,Exact Match
+Milan Malpensa Airport,Italy,Exact Match
+Milan Linate Airport,Italy,Exact Match
+Rome Fiumicino Airport,Italy,Exact Match
+Madrid-Barajas Airport,Spain,Exact Match
+Barcelona-El Prat Airport,Spain,Exact Match
+Cologne Bonn Airport,Germany,Exact Match
+Nuremberg Airport,Germany,Exact Match
+Hannover Airport,Germany,Exact Match
+Hamburg Airport,Germany,Exact Match
+Berlin Brandenburg Airport,Germany,Exact Match
+Munich Airport,Germany,Exact Match
+Vienna International Airport,Austria,Exact Match
+Copenhagen Airport,Denmark,Exact Match
+Bordeaux-Mérignac Airport,France,Exact Match
+Nantes Atlantique Airport,France,Exact Match
+Rennes–Saint-Jacques Airport,France,Exact Match
+Lille Airport,France,Exact Match
+Strasbourg Airport,France,Exact Match
+EuroAirport Basel-Mulhouse-Freiburg,France/Switzerland/Germany,Exact Match
+Luxembourg Airport,Luxembourg,Exact Match
+Antwerp International Airport,Belgium,Exact Match
+Rotterdam The Hague Airport,Netherlands,Exact Match
+Eindhoven Airport,Netherlands,Exact Match
+Liège Airport,Belgium,Exact Match
+Ostend-Bruges International Airport,Belgium,Exact Match
+London,United Kingdom,Keyword Match
+Paris,France,Keyword Match
+Charles de Gaulle,France,Keyword Match
+Orly,France,Keyword Match
+Frankfurt,Germany,Keyword Match
+Düsseldorf,Germany,Keyword Match
+Munich,Germany,Keyword Match
+Berlin,Germany,Keyword Match
+Hamburg,Germany,Keyword Match
+Stuttgart,Germany,Keyword Match
+Cologne,Germany,Keyword Match
+Köln,Germany,Keyword Match
+Hanover,Germany,Keyword Match
+Hannover,Germany,Keyword Match
+Nuremberg,Germany,Keyword Match
+Nürnberg,Germany,Keyword Match
+Leipzig,Germany,Keyword Match
+Dresden,Germany,Keyword Match
+Brussels,Belgium,Keyword Match
+Amsterdam,Netherlands,Keyword Match
+Rotterdam,Netherlands,Keyword Match
+Zurich,Switzerland,Keyword Match
+Geneva,Switzerland,Keyword Match
+Vienna,Austria,Keyword Match
+Milan,Italy,Keyword Match
+Rome,Italy,Keyword Match
+Madrid,Spain,Keyword Match
+Barcelona,Spain,Keyword Match
+Lyon,France,Keyword Match
+Marseille,France,Keyword Match
+Bordeaux,France,Keyword Match
+Nantes,France,Keyword Match
+Rennes,France,Keyword Match
+Lille,France,Keyword Match
+Strasbourg,France,Keyword Match
+Nice,France,Keyword Match
+Toulouse,France,Keyword Match
+Rome–Fiumicino International Airport,Italy,Exact Match
+Milan Malpensa International Airport,Italy,Exact Match
+Verona,Italy,Keyword Match
+Luxembourg,Luxembourg,Keyword Match
+Firenze,Italy,Keyword Match
+Verona,Italy,Exact Match
+Luxembourg,Luxembourg,Exact Match
+Firenze,Italy,Exact Match
