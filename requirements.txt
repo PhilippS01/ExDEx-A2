@@ -2,3 +2,6 @@ folium
 matplotlib
 pandas
 seaborn
+numpy
+scipy
+rapidfuzz
